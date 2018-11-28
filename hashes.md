@@ -4,7 +4,7 @@ Groestlcoin's network relies on hash algorithms that differ from Bitcoin. There 
 
 - **sha256d**: Two rounds of SHA256. This is the algorithm used by Bitcoin. It is also used in some Groestlcoin contexts.
 - **sha256**: A single round of SHA256.
-- **groestlHash**: Two rounds of Groestl-512. Throughout this document, the term "groestlHash" is used. The more specific term "groestl512d" is not currently used in any Groestlcoin projects.
+- **groestlHash**: Two rounds of Groestl-512, truncated to 32 bytes. Throughout this document, the term "groestlHash" is used. The more specific term "groestl512d" is used in some Groestlcoin projects.
 
 Converting a hash-related Bitcoin implementation to Groestlcoin largely involves replacing a use of sha256d with one of the other two algorithms.
 
