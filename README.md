@@ -6,6 +6,8 @@ This repository contains documentation of the Groestlcoin network. It is aimed a
 
 [Block Subsidy](subsidy.md): Subsidy schedule for Groestlcoin blocks.
 
+[Difficulty Adjustment](difficulty.md): Difficulty adjustment algorithm for Groestlcoin blocks.
+
 [Hashes](hashes.md): Hash algorithms used in Groestlcoin.
 
 ## Resources
