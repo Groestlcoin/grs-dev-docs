@@ -17,7 +17,8 @@ The differences in hash algorithms between Bitcoin and Groestlcoin are summarize
 |Block headers|sha256d|groestlHash|
 |Transactions|sha256d|sha256|
 |Base58 Checksums|sha256d|groestlHash|
-|Messages|sha256d|sha256|
+|Messages signed by user|sha256d|sha256|
+|P2P network sessages|sha256d|groestlHash|
 
 ## Details
 
@@ -33,13 +34,17 @@ Transaction hashes are sha256 digests in Groestlcoin instead of sha256d digests 
 
 The OP_HASH256 opcode applies groestlHash to its input instead of sha256d.
 
-### Addresses
+### Addresses, xpub, WIF
 
 Base58 encoding uses groestlHash for the four-byte checksum instead of sha256d. The RIPEMD-160 hash that precedes the checksum is the same as it is in Bitcoin (see "Unchanged Hashes" below).
 
-### Messages
+### Messages signed by user (with private key of an address)
 
 Message signing/verification uses sha256 in Groestlcoin instead of sha256d.
+
+### P2P network sessages
+
+Checksum of messages which Groestlcoin servers use to talk to each other uses groestlHash instead of sha256d.
 
 ## Unchanged Hashes
 
@@ -57,3 +62,4 @@ groestlHash can be found in GitHub repositories under the [Groestlcoin organizat
 
 - The Python package that includes a C implementation as an extension is on [GitHub](https://github.com/Groestlcoin/groestlcoin-hash-python) and can be installed with [pip](https://pypi.org/project/groestlcoin_hash/).
 - The JavaScript package is on [GitHub](https://github.com/Groestlcoin/groestl-hash-js) and can be installed with [npm](https://www.npmjs.com/package/groestl-hash-js).
+- The Go package is on [GitHub](https://github.com/Groestlcoin/go-groestl-hash)
