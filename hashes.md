@@ -18,7 +18,7 @@ The differences in hash algorithms between Bitcoin and Groestlcoin are summarize
 |Transactions|sha256d|sha256|
 |Base58 Checksums|sha256d|groestlHash|
 |Messages signed by user|sha256d|sha256|
-|P2P network sessages|sha256d|groestlHash|
+|P2P network messages|sha256d|groestlHash|
 
 ## Details
 
@@ -42,7 +42,7 @@ Base58 encoding uses groestlHash for the four-byte checksum instead of sha256d. 
 
 Message signing/verification uses sha256 in Groestlcoin instead of sha256d.
 
-### P2P network sessages
+### P2P network messages
 
 Checksum of messages which Groestlcoin servers use to talk to each other uses groestlHash instead of sha256d.
 
