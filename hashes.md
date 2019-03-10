@@ -62,4 +62,4 @@ groestlHash can be found in GitHub repositories under the [Groestlcoin organizat
 
 - The Python package that includes a C implementation as an extension is on [GitHub](https://github.com/Groestlcoin/groestlcoin-hash-python) and can be installed with [pip](https://pypi.org/project/groestlcoin_hash/).
 - The JavaScript package is on [GitHub](https://github.com/Groestlcoin/groestl-hash-js) and can be installed with [npm](https://www.npmjs.com/package/groestl-hash-js).
-- The Go package is on [GitHub](https://github.com/Groestlcoin/go-groestl-hash)
+- The Go package is on [GitHub](https://github.com/Groestlcoin/go-groestl-hash).
