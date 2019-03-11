@@ -17,7 +17,7 @@ Like Bitcoin, Groestlcoin implements fractional amounts using integer arithmetic
 
 ### Genesis Block and Premine
 
-The first two blocks in the Groestlcoin blockchain have subsidies that do not adhere to a schedule. The genesis block (height 0) has a subsidy of 1 groestlcoin, and the next block (height 1) has a subsidy of 240,640 groestlcoins.
+The first two blocks in the Groestlcoin blockchain have subsidies that do not adhere to a schedule. The genesis block (height 0) has a subsidy of 0 groestlcoins, and the next block (height 1) has a subsidy of 240,640 groestlcoins.
 
 ### Block Heights 2 - 119,999
 
